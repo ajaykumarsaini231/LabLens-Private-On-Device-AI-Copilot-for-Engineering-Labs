@@ -1,0 +1,16 @@
+[project]
+name = "lablens"
+version = "0.1.0"
+description = "Private, on-device AI copilot for engineering labs (prototype scaffold)"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+lablens = "lablens.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
